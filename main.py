@@ -1,6 +1,6 @@
 # ══════════════════════════════════════════════════════
-#  VOID-NUKE  v1.0.0  --  by void
-#  t.me/v0idtool · discord.gg/voidv2  |  github.com/v0id4real
+#  Nukers-Territory  v1.0.0  --  by Rc
+#  discord.gg/nukers 
 # ══════════════════════════════════════════════════════
 
 import os, sys, time, random, asyncio, json, re, webbrowser
@@ -19,14 +19,14 @@ init(autoreset=True)
 NO_BAN_KICK_ID = []
 
 TELEGRAM_URL = "https://t.me/v0idtool"
-TELEGRAM_TAG = "t.me/v0idtool"
-DISCORD_URL  = "https://discord.gg/voidv2"
+TELEGRAM_TAG = ""
+DISCORD_URL  = "https://discord.gg/nukers"
 DISCORD_TAG  = "discord.gg/voidv2"
-GITHUB_URL   = "https://github.com/v0id4real/Void-Nuke"
-PUB          = f"||@everyone||  **# RAID BY VOID-NUKE**  :  {TELEGRAM_TAG} · {DISCORD_TAG}  <{GITHUB_URL}>"
-PUB_SHORT    = f"{TELEGRAM_TAG} · {DISCORD_TAG} | github.com/v0id4real"
-RAID_NAME   = "raid-by-void"
-TOOL_NAME   = "VOID-NUKE"
+GITHUB_URL   ""
+PUB          = f"||@everyone||  **# Nuke by Nukers Territory**  :  {TELEGRAM_TAG} · {DISCORD_TAG}  <{GITHUB_URL}>"
+PUB_SHORT    = f"{TELEGRAM_TAG} · {DISCORD_TAG} |"
+RAID_NAME   = "nuke-by-Nukers"
+TOOL_NAME   = "NUKERS-TERRITORY"
 
 AUTO_RAID_CONFIG = {
     "channel_type"   : "text",
@@ -37,7 +37,7 @@ AUTO_RAID_CONFIG = {
 }
 
 EMBED_CONFIG = {
-    "title"      : "\U0001f480  __VOID-NUKE__",
+    "title"      : "\U0001f480  __NUKERS__",
     "description": (
         "**Ton serveur vient d'\u00eatre raid par VOID-NUKE.**\n\n"
         "_ _\n"
@@ -59,9 +59,9 @@ EMBED_CONFIG = {
     ],
 }
 
-WEBHOOK_CONFIG = {"default_name": "VOID-NUKE"}
+WEBHOOK_CONFIG = {"default_name": "NUKERS"}
 SERVER_CONFIG  = {
-    "new_name"       : "RAIDED BY VOID-NUKE",
+    "new_name"       : "NUKERS-TERRITORY",
     "new_icon"       : "",
     "new_description": f"{TELEGRAM_TAG} · {DISCORD_TAG}",
 }
@@ -182,20 +182,21 @@ def _get_guild(sid: str):
 
 # ── banner ─────────────────────────────────────────────
 _ART = [
-    r"██╗   ██╗ ██████╗ ██╗██████╗ ",
-    r"██║   ██║██╔═══██╗██║██╔══██╗",
-    r"██║   ██║██║   ██║██║██║  ██║",
-    r"╚██╗ ██╔╝██║   ██║██║██║  ██║",
-    r" ╚████╔╝ ╚██████╔╝██║██████╔╝",
-    r"  ╚═══╝   ╚═════╝ ╚═╝╚═════╝ ",
+    r"███╗   ██╗██╗   ██╗██╗  ██╗███████╗██████╗ ███████╗",
+    r"████╗  ██║██║   ██║██║ ██╔╝██╔════╝██╔══██╗██╔════╝",
+    r"██╔██╗ ██║██║   ██║█████╔╝ █████╗  ██████╔╝███████╗",
+    r"██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗╚════██║",
+    r"██║ ╚████║╚██████╔╝██║  ██╗███████╗██║  ██║███████║",
+    r"╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝",
 ]
+
 _ART2 = [
-    r"  ██╗    ██╗██╗   ██╗██╗  ██╗███████╗ ║               ",
-    r"  ████╗  ██║██║   ██║██║ ██╔╝██╔════╝ ║ by 1s0e       ",
-    r"  ██╔██╗ ██║██║   ██║█████╔╝ █████╗   ╠══════════════ ",
-    r"  ██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝   ║ " + DISCORD_TAG + "  ",
-    r"  ██║ ╚████║╚██████╔╝██║  ██╗███████╗ ╠══════════════ ",
-    r"  ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ║               ",
+    r"████████╗███████╗██████╗ ██████╗ ██╗████████╗ ██████╗ ██████╗ ██╗   ██╗",
+    r"╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔═══██╗██╔══██╗╚██╗ ██╔╝",
+    r"   ██║   █████╗  ██████╔╝██████╔╝██║   ██║   ██║   ██║██████╔╝ ╚████╔╝ ",
+    r"   ██║   ██╔══╝  ██╔══██╗██╔══██╗██║   ██║   ██║   ██║██╔══██╗  ╚██╔╝  ",
+    r"   ██║   ███████╗██║  ██║██║  ██║██║   ██║   ╚██████╔╝██║  ██║   ██║   ",
+    r"   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ",
 ]
 _SHADES = [R1, R1, R2, R2, R3, R3]
 
