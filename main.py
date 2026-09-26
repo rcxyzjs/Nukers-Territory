@@ -21,7 +21,7 @@ NO_BAN_KICK_ID = []
 TELEGRAM_URL = "https://t.me/v0idtool"
 TELEGRAM_TAG = ""
 DISCORD_URL  = "https://discord.gg/nukers"
-DISCORD_TAG  = "discord.gg/voidv2"
+DISCORD_TAG  = "discord.gg/nukers"
 GITHUB_URL = "https://github.com/void4real/Void-Nuke"
 PUB          = f"||@everyone||  **# Nuke by Nukers Territory**  :  {TELEGRAM_TAG} · {DISCORD_TAG}>"
 PUB_SHORT    = f"{TELEGRAM_TAG} · {DISCORD_TAG} |"
@@ -183,7 +183,7 @@ def _get_guild(sid: str):
 # ── banner ─────────────────────────────────────────────
 _ART = [
     r"███╗   ██╗██╗   ██╗██╗  ██╗███████╗██████╗ ███████╗",
-    r"████╗  ██║██║   ██║██║ ██╔╝██╔════╝██╔══██╗██╔════╝",
+    r"████╗  ██║██║   ██║██║ ██╔╝██╔════╝██╔══██╗██╔════╝" by Rc ,
     r"██╔██╗ ██║██║   ██║█████╔╝ █████╗  ██████╔╝███████╗",
     r"██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗╚════██║",
     r"██║ ╚████║╚██████╔╝██║  ██╗███████╗██║  ██║███████║",
