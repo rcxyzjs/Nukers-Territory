@@ -1,6 +1,6 @@
 # ══════════════════════════════════════════════════════
 #  Nukers-Territory  v1.0.0  --  by Rc
-#  discord.gg/nukers 
+#  https://discord.gg/3VvC4EnetU
 # ══════════════════════════════════════════════════════
 
 import os, sys, time, random, asyncio, json, re, webbrowser
@@ -20,12 +20,12 @@ NO_BAN_KICK_ID = []
 
 TELEGRAM_URL = "https://t.me/v0idtool"
 TELEGRAM_TAG = ""
-DISCORD_URL  = "https://discord.gg/nukers"
-DISCORD_TAG  = "discord.gg/nukers"
+DISCORD_URL  = "https://discord.gg/3VvC4EnetU"
+DISCORD_TAG  = ""
 GITHUB_URL = "https://github.com/void4real/Void-Nuke"
 PUB          = f"||@everyone||  **# Nuke by Nukers Territory**  :  {TELEGRAM_TAG} · {DISCORD_TAG}>"
 PUB_SHORT    = f"{TELEGRAM_TAG} · {DISCORD_TAG} |"
-RAID_NAME   = "nuke-by-Nukers"
+RAID_NAME   = "nuke-by-Nt"
 TOOL_NAME   = "NUKERS-TERRITORY"
 
 AUTO_RAID_CONFIG = {
@@ -55,17 +55,17 @@ EMBED_CONFIG = {
         {"name": "\U0001f4f1 __Telegram__", "value": f"**{TELEGRAM_TAG}**", "inline": True},
         {"name": "\U0001f517 __Discord__", "value": f"**{DISCORD_TAG}**", "inline": True},
         {"name": "\U0001f431 __Github__",  "value": "**github.com/v0id4real**",   "inline": True},
-        {"name": "\u26a1 __Tool__",        "value": "**VOID-NUKE v1.0.0**",       "inline": True},
+        {"name": "\u26a1 __Tool__",        "value": "**Rc-Nuker v1.0.0**",       "inline": True},
     ],
 }
 
-WEBHOOK_CONFIG = {"default_name": "NUKERS"}
+WEBHOOK_CONFIG = {"default_name": "NUKING-TERRITORY"}
 SERVER_CONFIG  = {
     "new_name"       : "NUKERS-TERRITORY",
     "new_icon"       : "",
     "new_description": f"{TELEGRAM_TAG} · {DISCORD_TAG}",
 }
-BOT_PRESENCE = {"type": "playing", "text": f"{TELEGRAM_TAG} · {DISCORD_TAG}"}
+BOT_PRESENCE = {"type": "ENABLE HIGH SECURITY", "text": f"{TELEGRAM_TAG} · {DISCORD_TAG}"}
 
 # ── palette ────────────────────────────────────────────
 RS  = "\033[0m";  B   = "\033[1m"
@@ -195,7 +195,7 @@ _ART2 = [
     r"╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔═══██╗██╔══██╗╚██╗ ██╔╝",
     r"   ██║   █████╗  ██████╔╝██████╔╝██║   ██║   ██║   ██║██████╔╝ ╚████╔╝ ",
     r"   ██║   ██╔══╝  ██╔══██╗██╔══██╗██║   ██║   ██║   ██║██╔══██╗  ╚██╔╝  ",
-    r"   ██║   ███████╗██║  ██║██║  ██║██║   ██║   ╚██████╔╝██║  ██║   ██║   ",
+    r"   ██║   ███████╗██║  ██║██║  ██║██║   ██║   ╚██████╔╝██║  ██║   ██║  By Rc ",
     r"   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ",
 ]
 _SHADES = [R1, R1, R2, R2, R3, R3]
@@ -231,10 +231,7 @@ _MENU = [
         [("33","Spam"),  ("34","Thread Spam"),  ("35","Reaction Spam"),  ("36","Voice Spam")],
         [("37","Spoiler Spam"),  ("38","Poll Spam"),  ("39","Event Spam"),  ("40","Quit")],
     ],
-    [   # ── page 3 — Star-for-unlock (41-45) ───────────────────────────
-        [("41","Ultra Nuke Pro"),  ("42","Auto Destroy V2"),  ("43","Token Raid"),  ("44","Server Cloner+")],
-        [("45","Webhook Nuke Pro"),  None,  None,  None],
-    ],
+
 ]
 
 _CW = 24
