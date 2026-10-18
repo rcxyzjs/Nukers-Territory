@@ -1,4 +1,4 @@
-title VOID-NUKE v1.0
+title Rc-Nuker v1.0
 
 pip install discord.py 
 pip install aiohttp
